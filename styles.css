@@ -1,0 +1,96 @@
+/* Consistent Navbar for Homepage */
+.navbar-custom {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 10px 20px; /* Compact padding */
+}
+
+.navbar-logo {
+    font-size: 1.6rem;  /* Matching font size as intro page */
+    font-weight: 700;   /* Bold, like in the intro page */
+    color: #333;        /* Dark gray text for logo */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Exact font from intro page */
+    letter-spacing: 1px;  /* Slight spacing between letters */
+    text-transform: none;  /* No uppercasing, as in the intro page */
+}
+
+/* Navbar Link Styles */
+.navbar .nav-item .nav-link {
+    color: #555; /* Light gray links */
+    font-size: 1rem; /* Consistent text size */
+    padding: 0 15px; /* Even spacing for nav items */
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #000; /* Dark on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Hero Section Styling for Full-Width */
+.hero-section {
+    background-color: #ffffff;
+    text-align: left;
+    padding: 120px 20px;  /* Larger padding to fill the screen */
+    min-height: 100vh;  /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    top: 60px;  /* Moves it below the navbar */
+}
+
+/* Hero Title Styling */
+.hero-title {
+    font-size: 3rem;  /* Larger font for hero section */
+    font-weight: 700;  /* Bold title */
+    color: #333;  /* Dark text */
+    position: absolute;
+    top: 10%;  /* Position from the top */
+    left: 10%;  /* Align to the left */
+    margin-bottom: 20px;
+    max-width: 600px;  /* Prevents it from becoming too wide */
+}
+
+/* Hero Section Text Styling */
+.hero-text {
+    font-size: 1.2rem; /* Slightly larger text */
+    color: #6c757d;  /* Grayish text */
+    margin-bottom: 40px;
+    position: absolute;
+    top: 20%;  /* Slightly below the title */
+    left: 10%;
+    max-width: 600px;
+}
+
+/* Hero Image Styling */
+.hero-image {
+    width: 300px;  /* Image width */
+    position: absolute;
+    right: 5%;  /* Align image to the right */
+    bottom: 10%;  /* Bottom adjustment */
+    max-width: 100%; /* Scales with smaller screens */
+}
+
+/* Get Started Button Styling */
+.get-started-btn {
+    position: absolute;
+    left: 10%;  /* Align with text */
+    top: 60%;  /* Move the button down */
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    background-color: #495057;  /* Button color */
+    color: white;  /* Text color */
+    text-decoration: none;
+}
+
+/* Navbar Links Spacing */
+.navbar .nav-item {
+    margin-right: 20px;  /* Add space between links */
+}
+
+/* Get Started Button Hover Effect */
+.get-started-btn:hover {
+    background-color: #343a40;  /* Darker shade on hover */
+}
