@@ -87,17 +87,25 @@ def login():
 # Create new blog route - changed to '/write'
 @app.route("/write", methods=["GET", "POST"])
 def write():
+    if "user_id" not in session:
+        return redirect(url_for("login"))  # Redirect to login if not logged in
+
     if request.method == "POST":
         title = request.form.get("title")
         content = request.form.get("content")
+        
+        # Get the user_id from the session (logged-in user's ID)
+        user_id = session["user_id"]
 
-        new_blog = Blog(title=title, content=content)
+        new_blog = Blog(title=title, content=content, user_id=user_id)  # Include user_id
+
         db.session.add(new_blog)
         db.session.commit()
         flash("Blog post created successfully!", "success")
         return redirect(url_for("home"))
 
     return render_template("write.html")
+
 
 
 @app.route("/home")
